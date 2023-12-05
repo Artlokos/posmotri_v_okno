@@ -28,7 +28,7 @@ ol {
 }
 
 .page {
-  inline-size: 1200px;
+  inline-size: 1207px;
   block-size: 100%;
   margin: auto;
   color: #fff;
@@ -45,14 +45,13 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 1140px;
+  width: 1200px;
   height: 537px;
-  gap: 30px;
+  gap: 41px;
   align-items: flex-end;
 }
 
-.result {
-}
+.result {width: 696px;}
 
 .result__video-container {
   width: 711px;
@@ -72,8 +71,8 @@ ol {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
-  gap: 40px;
-  margin: 0 0 5px 0;
+  gap: 38px;
+  margin: 0px 0 7px;
 }
 
 .search-form__fieldset {
@@ -89,17 +88,14 @@ ol {
   font-family: 'Fira Sans Condensed';
   font-size: 18px;
   font-weight: normal;
-  margin: 8px 0 5px 0;
-  /* letter-spacing: 0px; */
+  margin: 8px 0 5px;
 }
 
 .search-form__label {
   display: flex;
-  gap: 5px;
+  gap: 4px;
 }
 
-.search-form__label-text {
-}
 
 .visually-hidden {
   position: absolute;
@@ -111,35 +107,80 @@ ol {
   white-space: nowrap;
 }
 
-.search-form__textfield {font-family: 'Fira Sans Condensed';font-size: 18px;color: rgb(255,255,255,0.7);width: 226px;background-color: #1B1919;border: none;border-top: 1px solid rgb(255,255,255,0.7);border-bottom: 1px solid rgb(255,255,255,0.7);cursor: pointer;appearance: none;}
+.search-form__textfield {
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+  color: rgb(255, 255, 255, 0.7);
+  width: 226px;
+  background-color: #1b1919;
+  border: none;
+  border-top: 1px solid rgb(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.7);
+  cursor: pointer;
+  appearance: none;
+}
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 15px;
+  gap: 11px;
+}
+
+.search-form__textfield:has(:focus-visible){
+  border:none;
+}
+
+.search-form__textfield:focus::placeholder{
+  visibility: hidden;
 }
 
 .search-form__checkbox {
   border: 1px solid #fff;
-  width: 0px;
 }
 
-.search-form__pseudo-checkbox {border: 1px solid #fff;width: 20px;cursor: pointer;}
+.search-form__pseudo-checkbox {
+  position: relative;
+  border: 1px solid #fff;
+  width: 20px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + span {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  margin-right: 5px;
+}
+
+input[type="checkbox"]:checked + span::before {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 17px;
+  top: 1px;
+  left: 1px;
+  background-color: #fff;
+}
 
 .button {
-  border:1px solid #fff;
+  border: 1px solid #fff;
   background-color: #1b1919;
   color: #fff;
   font-family: 'Fira Sans Condensed';
   font-size: 18px;
-  padding: 3px 73px;
+  padding: 5px 68px;
+}
+
+.button:focus{
+  border: none;
 }
 
 .search-form__submit-button {
+  min-width: 195px;
 }
 
 .content__details {
   display: flex;
-  width: 100%;
+  width: 399px;
   height: 100%;
   gap: 26px;
   flex-direction: column;
@@ -171,7 +212,7 @@ ol {
 
 .content__list::-webkit-scrollbar {
   width: 5px;
-  background-color: #1B1919;
+  background-color: #1b1919;
 }
 
 .content__list::-webkit-scrollbar-thumb {
@@ -179,22 +220,8 @@ ol {
   border-radius: 3px;
 }
 
-.preloader-template {
-}
-
-.preloader {
-}
-
-.preloader-chasing-squares {
-}
-
-.square {
-}
-
-.cards-list-item-template {
-}
-
-.content__list-item {
+.content__list-item:hover {
+  border: 1px solid #fff;
 }
 
 .content__list-item:last-child {
@@ -202,8 +229,21 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   text-decoration: none;
   color: #fff;
+}
+
+.content__card-link_current{
+  background-color: #545050;
+}
+
+.content__card-link:active{
+  background-color: #545050;
+}
+
+.content__card-link:focus-visible {
+  border: 1px solid #fff;
 }
 
 .content__video-card {
@@ -219,7 +259,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -232,19 +272,10 @@ ol {
 
 .content__video-card-thumbnail {
   width: 100%;
-  height: 103px;
+  height: 100px;
 }
 
-.more-button-template {
-}
-
-.more-button {margin: 10px 0px;width: 100%;}
-
-.error-template {
-}
-
-.error {
-}
-
-.error__title {
+.more-button {
+  margin: 10px 0;
+  width: 399px;
 }
