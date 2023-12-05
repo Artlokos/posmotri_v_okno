@@ -51,7 +51,9 @@ ol {
   align-items: flex-end;
 }
 
-.result {width: 696px;}
+.result {
+  width: 696px;
+}
 
 .result__video-container {
   width: 711px;
@@ -72,7 +74,7 @@ ol {
   justify-content: flex-start;
   align-items: flex-end;
   gap: 38px;
-  margin: 0px 0 7px;
+  margin: 0 0 7px;
 }
 
 .search-form__fieldset {
@@ -95,7 +97,6 @@ ol {
   display: flex;
   gap: 4px;
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -125,11 +126,11 @@ ol {
   gap: 11px;
 }
 
-.search-form__textfield:has(:focus-visible){
-  border:none;
+.search-form__textfield:has(:focus-visible) {
+  border: none;
 }
 
-.search-form__textfield:focus::placeholder{
+.search-form__textfield:focus::placeholder {
   visibility: hidden;
 }
 
@@ -144,16 +145,16 @@ ol {
   cursor: pointer;
 }
 
-input[type="checkbox"] + span {
+input[type='checkbox'] + span {
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
   margin-right: 5px;
 }
 
-input[type="checkbox"]:checked + span::before {
+input[type='checkbox']:checked + span::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 17px;
   height: 17px;
   top: 1px;
@@ -170,7 +171,7 @@ input[type="checkbox"]:checked + span::before {
   padding: 5px 68px;
 }
 
-.button:focus{
+.button:focus {
   border: none;
 }
 
@@ -188,7 +189,7 @@ input[type="checkbox"]:checked + span::before {
 }
 
 .title {
-  font-family: 'Oswald', sans-serif;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
@@ -234,11 +235,11 @@ input[type="checkbox"]:checked + span::before {
   color: #fff;
 }
 
-.content__card-link_current{
+.content__card-link_current {
   background-color: #545050;
 }
 
-.content__card-link:active{
+.content__card-link:active {
   background-color: #545050;
 }
 
@@ -259,7 +260,7 @@ input[type="checkbox"]:checked + span::before {
 }
 
 .content__video-card-title {
-  font-family: 'Oswald', sans-serif;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -267,7 +268,6 @@ input[type="checkbox"]:checked + span::before {
 
 .content__video-card-description {
   line-height: 16.2px;
-  font-family: 'Fira Sans Condensed';
 }
 
 .content__video-card-thumbnail {
