@@ -99,6 +99,7 @@ ol {
 }
 
 .visually-hidden {
+  position: absolute;
   inline-size: 1px;
   block-size: 1px;
   overflow: hidden;
@@ -152,11 +153,11 @@ input[type='checkbox'] + span {
 }
 
 input[type='checkbox']:checked + span::before {
+  position: absolute;
   content: '';
-  width: 16px;
-  height: 16px;
-  top: 1px;
-  left: 1px;
+  width: 13px;
+  height: 13px;
+  inset: 2px;
   background-color: #fff;
 }
 
