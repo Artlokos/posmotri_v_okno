@@ -153,7 +153,7 @@ input[type='checkbox'] + span {
 }
 
 input[type='checkbox']:checked + span::before {
-  position: absolute;
+  /* position: absolute; */
   content: '';
   width: 17px;
   height: 17px;
