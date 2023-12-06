@@ -80,8 +80,8 @@ ol {
 .search-form__fieldset {
   border: none;
   display: flex;
-  flex-direction: column;
   gap: 8px;
+  flex-direction: column;
 }
 
 .search-form__fieldset-title {
@@ -120,8 +120,9 @@ ol {
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+  gap: 16px;
+  flex-wrap: nowrap;
+  margin: 0px 0 4px 0px;
 }
 
 .search-form__pseudo-checkbox {
