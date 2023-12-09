@@ -148,9 +148,9 @@ ol {
   display: flex;
   width: 399px;
   min-height: 534px;
-  gap: 26px;
+  gap: 20px;
+  justify-content: flex-start;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .title {
@@ -159,6 +159,7 @@ ol {
   line-height: 94%;
   text-transform: uppercase;
   font-weight: bold;
+  width: 399px;
 }
 
 .content__accent {
@@ -168,14 +169,20 @@ ol {
 .content__list {
   height: 298px;
   position: relative;
-  display: flex;
-  flex-direction: column;
   overflow-y: auto;
-  gap: 30px;
+}
+
+.content__list-item{
+  width: 388px;
+  height: 107px;
+  margin: 3px 0px 0 3px;
+}
+
+.content__list-item:not(:last-child){
+  margin-bottom: 30px;
 }
 
 .content__card-link {
-  display: block;
   text-decoration: none;
   color: #fff;
 }
@@ -186,14 +193,13 @@ ol {
 
 .content__video-card {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
 }
 
 .content__video-card-description-container {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  width: -webkit-fill-available;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .content__video-card-title {
@@ -208,17 +214,12 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 100%;
-  height: 100px;
+  height: 107px;
   object-fit: cover;
 }
 
-.content__list-item:last-child {
-  margin: 0;
-}
-
 .content__list::-webkit-scrollbar {
-  width: 5px;
+  width: 5px;     
   background-color: #1b1919;
 }
 
@@ -228,9 +229,9 @@ ol {
 }
 
 .more-button {
-  margin: 10px 0;
-  width: 399px;
+  width: 100%;
 }
+
 
 .error__title {
   line-height: 110%;
@@ -265,23 +266,22 @@ ol {
 }
 
 .button:focus-visible {
+  margin: 4px;
+  width: 97%;
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
 
-.content__card-link:active {
+.content__list-item:active {
   background-color: #545050;
+}
+
+.content__list-item:focus-visible {
+  outline: 1px solid #fff;    
 }
 
 .content__card-link:hover {
   text-decoration: underline;
-}
-
-.content__card-link:focus {
-  outline: none;
-}
-
-.content__card-link:focus-visible {
   outline: 1px solid #fff;
 }
 
